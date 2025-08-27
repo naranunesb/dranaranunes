@@ -1,0 +1,195 @@
+body {
+    font-family: 'Aller', sans-serif; /* Fonte principal do manual */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #FADCEB; /* Cor de fundo - Rosa muito claro do manual */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #C2616F, #E19AC3); /* Gradiente com cores principais do manual */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Carloti Personal Use', serif; /* Fonte para o título do manual */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    background: #C2616F; /* Cor da navegação - Rosa mais forte do manual */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #E19AC3; /* Cor do hover na navegação do manual */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #C2616F; /* Cor dos títulos de seção do manual */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #E19AC3; /* Cor da borda dos títulos do manual */
+    padding-bottom: 0.5rem;
+}
+
+section h3 {
+    color: #C2616F; /* Cor dos subtítulos de seção do manual */
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+section ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#instagram-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#instagram-videos iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #C2616F; /* Cor do rodapé do manual */
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    #instagram-videos iframe {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+.logo {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Adicionando elementos complementares ao layout */
+.section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.section-divider .line-element {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #E19AC3; /* Cor da linha do manual */
+    margin: 0 10px;
+}
+
+.section-divider .circle-element {
+    width: 20px;
+    height: 20px;
+    background-color: #E6CCE4; /* Cor do círculo do manual */
+    border-radius: 50%;
+}
+
+.section-divider .oval-element {
+    width: 30px;
+    height: 15px;
+    background-color: #FDECE5; /* Cor do oval do manual */
+    border-radius: 50%;
+}
+
+
